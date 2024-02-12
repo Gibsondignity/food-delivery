@@ -11,7 +11,7 @@ This is a mobile application developed using React Native and Expo, designed to 
 
 ## Screenshots
 
-[Add screenshots of your app here]
+[Screenshots of the app will be added later]
 
 ## Installation
 
@@ -20,13 +20,13 @@ To run this app locally on your machine, follow these steps:
 1. Clone this repository:
 
     ```
-    git clone https://github.com/your-username/food-delivery-app.git
+    git clone https://github.com/gibsondignty/food-delivery.git
     ```
 
 2. Navigate into the project directory:
 
     ```
-    cd food-delivery-app
+    cd food-delivery
     ```
 
 3. Install dependencies:
