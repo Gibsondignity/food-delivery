@@ -6,6 +6,9 @@ import { themeColors } from '../theme';
 import { useNavigation } from '@react-navigation/native';
 import DishRow from '../components/dishRow';
 import CardIcon from '../components/cardIcon';
+import { useEffect } from 'react';
+import { useDispatch } from 'react-redux';
+import { setRestaurant } from '../slices/restaurantSlice';
 
 
 export default function RestaurantScreen() {
@@ -13,6 +16,15 @@ export default function RestaurantScreen() {
   const { params } = useRoute();
   let item = params;
   // console.log(item);
+  useEffect(()=>{
+    if(item && item.id){
+      dispatch(setRestaurant({...item}))
+    }
+  }, [])
+
+
+  const dispatch = useDispatch()
+
   return (
     <View>
 
