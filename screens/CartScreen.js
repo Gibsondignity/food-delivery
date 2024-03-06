@@ -7,10 +7,11 @@ import * as Icon from "react-native-feather";
 import { useNavigation } from '@react-navigation/native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { useSelector } from 'react-redux';
+import { selectRestaurant } from '../slices/restaurantSlice';
 
 
 export default function CartScreen() {
-    const restaurant = useSelector()
+    const restaurant = useSelector(selectRestaurant)
     const navigation = useNavigation()
     return (
         <SafeAreaView className="bg-white flex-1">

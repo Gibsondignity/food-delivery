@@ -15,7 +15,9 @@ export default function RestaurantScreen() {
   const navigation = useNavigation();
   const { params } = useRoute();
   let item = params;
-  // console.log(item);
+
+  const dispatch = useDispatch()
+  
   useEffect(()=>{
     if(item && item.id){
       dispatch(setRestaurant({...item}))
@@ -23,7 +25,7 @@ export default function RestaurantScreen() {
   }, [])
 
 
-  const dispatch = useDispatch()
+  
 
   return (
     <View>
